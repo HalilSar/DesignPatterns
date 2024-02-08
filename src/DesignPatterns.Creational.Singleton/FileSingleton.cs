@@ -24,5 +24,10 @@ namespace DesignPatterns.Creational.Singleton
             FileStream fs = File.Create(path);
             fs.Close();
         }
+        public void FileDelete(string path)
+        {
+            File.Delete(path);
+        }
+
     }
 }
