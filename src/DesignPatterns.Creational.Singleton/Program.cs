@@ -8,7 +8,7 @@ namespace DesignPatterns.Creational.Singleton
         {
             var file= FileSingleton.CreateInstance();
             file.FileCreate("D:\\deneme.txt");
-
+            file.FileDelete("D:\\deneme.txt");
             Console.WriteLine("Hello World!");
         }
     }
