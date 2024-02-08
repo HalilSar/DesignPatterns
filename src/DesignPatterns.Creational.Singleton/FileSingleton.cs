@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Creational.Singleton
 {
-    class FileSingleton
+   public class FileSingleton
     {
+        private static FileSingleton uniqueFileSingleton;
+        private FileSingleton() { }
+
+        public static FileSingleton CreateInstance()
+        {
+            if (uniqueFileSingleton == null)
+                uniqueFileSingleton = new FileSingleton();
+            return uniqueFileSingleton;
+        }
     }
 }
