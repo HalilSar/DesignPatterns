@@ -6,7 +6,12 @@ namespace DesignPatterns.Creational.Factory
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            CarFactory bmw = new BMWFactory();
+            foreach (var item in bmw.cars)
+            {
+                Console.WriteLine(item.Brand + " " + item.Model + + item.HorsePower);
+            }
+          
         }
     }
 }

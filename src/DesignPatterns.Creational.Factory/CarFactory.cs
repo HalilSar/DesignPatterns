@@ -8,7 +8,7 @@ namespace DesignPatterns.Creational.Factory
 {
    public abstract class CarFactory
     {
-        List<Car> cars = new List<Car>();
+        public List<Car> cars = new List<Car>();
         public abstract void CreateAuto();
         public CarFactory()
         {
