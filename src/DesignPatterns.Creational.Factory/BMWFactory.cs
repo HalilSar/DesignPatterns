@@ -11,7 +11,8 @@ namespace DesignPatterns.Creational.Factory
         public override void CreateAuto()
         {
             SetCarList(new Z4(170));
-            
+            SetCarList(new BMW3(190));
+
         }
     }
 }
