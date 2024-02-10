@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Creational.FactoryMethod
 {
-    public class Water:Beverage
+    public interface Beverage
     {
-       public string GetBeverageType()
-       {
-            return "Water";
-       }
+        string GetBeverageType();
     }
 }
