@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Creational.AbstractFactory
 {
-   public interface Bear
+   public class BrownBear:Bear
     {
-        string GetBearSpecies();
+        public string GetBearSpecies()
+        {
+            return "Brown Bear";
+        }
+            
     }
 }
