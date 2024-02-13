@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Creational.AbstractFactory
 {
-    public class ConcreteFactory1 : AbstractFactory
+    public class ConcreteFactory2: AbstractFactory
     {
         public Bear GetBear()
         {
-            return   new BrownBear();
+            return   new PolarBear();
 
         }
 
         public Tiger GetTiger()
         {
-            return new BengalTiger();
+            return new SiberianTiger();
 
           
         }
