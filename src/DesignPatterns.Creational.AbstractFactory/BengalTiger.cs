@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Creational.AbstractFactory
 {
-   public interface Tiger
+   public class BengalTiger:Tiger
     {
-        string GetTigerSpecies();
+        public string GetTigerSpecies()
+        {
+            return "Bengal Tiger";
+        }
+            
     }
 }
