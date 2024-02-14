@@ -9,18 +9,18 @@ namespace DesignPatterns.Creational.Builder
   public   class FordOrderBuilder:OrderBuilder
     {
 
-        public override void GetBrand(string brand) {        
+        public override void SetBrand(string brand) {        
               this.car.Brand  = new Brand(brand);
         }
-        public override void GetModel(string model)
+        public override void SetModel(string model)
         {
               this.car.Model  = new Model(model);
         }
-        public override void GetColor(string color) {
+        public override void SetColor(string color) {
             this.car.Color = color;
 
         }
-        public override void GetHorsePower(int horsePower){
+        public override void SetHorsePower(int horsePower){
             this.car.HorsePower = horsePower;
         }
     }

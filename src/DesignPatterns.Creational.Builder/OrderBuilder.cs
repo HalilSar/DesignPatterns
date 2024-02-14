@@ -18,10 +18,10 @@ namespace DesignPatterns.Creational.Builder
             return null;
         }
 
-        public abstract void GetBrand(string brand);
-        public abstract void GetModel(string model);
-        public abstract void GetColor(string color);
-        public abstract void GetHorsePower(int horsePower);
+        public abstract void SetBrand(string brand);
+        public abstract void SetModel(string model);
+        public abstract void SetColor(string color);
+        public abstract void SetHorsePower(int horsePower);
 
     }
 }
