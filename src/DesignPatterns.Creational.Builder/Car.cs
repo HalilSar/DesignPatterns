@@ -8,6 +8,8 @@ namespace DesignPatterns.Creational.Builder
 {
    public  class Car
     {
+        public Brand Brand { get; set; }
+        public Model Model { get; set; }
         public string Color { get; set; }
     }
 }
