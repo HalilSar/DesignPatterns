@@ -13,9 +13,15 @@ namespace DesignPatterns.Creational.Builder
         public Car  CreateOrder(string brand,string model,string color,int horsePower)
         {
             if(brand=="Ford")
+            {
                 orderBuilder= new FordOrderBuilder();
+            }
+                
             else if (brand=="Audi")
-                orderBuilder = new AudiOrderBuilder();
+            {
+                 orderBuilder = new AudiOrderBuilder();
+            }
+               
             orderBuilder.SetBrand(brand);
             orderBuilder.SetModel(model);
             orderBuilder.SetColor(color);
