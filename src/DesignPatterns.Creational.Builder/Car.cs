@@ -11,5 +11,6 @@ namespace DesignPatterns.Creational.Builder
         public Brand Brand { get; set; }
         public Model Model { get; set; }
         public string Color { get; set; }
+        public int HorsePower { get; set; }
     }
 }
