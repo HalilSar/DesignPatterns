@@ -8,7 +8,7 @@ namespace DesignPatterns.Creational.Builder
 {
   public abstract  class OrderBuilder
     {
-        private Car car;
+        protected Car car;
         public Car GetCar()
         {
             if(car ==null)
@@ -19,9 +19,9 @@ namespace DesignPatterns.Creational.Builder
         }
 
         public abstract void GetBrand(string brand);
-        public abstract void GetModel(string brand);
-        public abstract void GetColor(string brand);
-        public abstract void GetHorsePower(string horsePower);
+        public abstract void GetModel(string model);
+        public abstract void GetColor(string color);
+        public abstract void GetHorsePower(int horsePower);
 
     }
 }
