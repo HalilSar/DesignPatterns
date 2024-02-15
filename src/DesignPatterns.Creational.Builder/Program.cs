@@ -12,6 +12,7 @@ namespace DesignPatterns.Creational.Builder
             Console.WriteLine("******************************");
             manager = new OrderManager();
             manager.CreateOrder("Audi", "A5", "Dark", 270);
+            manager.ShowOrder();
             Console.WriteLine("******************************");
 
         }

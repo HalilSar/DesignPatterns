@@ -9,14 +9,18 @@ namespace DesignPatterns.Creational.Builder
   public abstract  class OrderBuilder
     {
         protected Car car;
-        public Car GetCar()
+        public OrderBuilder()
+        {
+            CreateCar();
+        }
+        public void CreateCar()
         {
             if(car ==null)
             {
-                return new Car();
+                car= new Car();
             }
-            return null;
         }
+        public Car GetCar() => car;
 
         public abstract void SetBrand(string brand);
         public abstract void SetModel(string model);
