@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Creational.Prototype
 {
-    public  class Account : AccountPrototype
+    public  class CorporateAccount : AccountPrototype
     {
-        public Account(decimal balance)
+        public string CorporateName;
+        public string TIN;
+        public CorporateAccount(decimal balance)
         {
             this.Balance = balance;
         }
