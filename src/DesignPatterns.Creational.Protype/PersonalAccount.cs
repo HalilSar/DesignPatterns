@@ -10,7 +10,7 @@ namespace DesignPatterns.Creational.Prototype
     {
         public string Name;
         public string SurName { get; set; }
-        public PersonalAccount(decimal balance,)
+        public PersonalAccount(decimal balance)
         {
             this.Balance = balance;
         }
