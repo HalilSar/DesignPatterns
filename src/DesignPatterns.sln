@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Creational.A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Creational.Builder", "DesignPatterns.Creational.Builder\DesignPatterns.Creational.Builder.csproj", "{6AE12DAB-A894-4DEC-86B9-66CCAB9F7CFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Creational.Protype", "DesignPatterns.Creational.Protype\DesignPatterns.Creational.Protype.csproj", "{679F6E6C-5D52-4A89-BD7E-F8E2AED4DAC1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Creational.Prototype", "DesignPatterns.Creational.Protype\DesignPatterns.Creational.Prototype.csproj", "{679F6E6C-5D52-4A89-BD7E-F8E2AED4DAC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

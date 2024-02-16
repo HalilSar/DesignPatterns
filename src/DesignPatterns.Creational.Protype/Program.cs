@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DesignPatterns.Creational.Protype
+namespace DesignPatterns.Creational.Prototype
 {
     class Program
     {
@@ -9,8 +9,11 @@ namespace DesignPatterns.Creational.Protype
             Console.WriteLine("Hello World!");
         }
     }
+    #region Dummy Code
     //class DummyProtype : ICloneable
     //{
 
     //}
+    #endregion
+
 }
