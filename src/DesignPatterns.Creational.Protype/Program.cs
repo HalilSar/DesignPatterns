@@ -6,14 +6,15 @@ namespace DesignPatterns.Creational.Prototype
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Account account = new Account(2000);
+            Console.WriteLine("************");
+            PersonalAccount personal = (PersonalAccount)account.Clone();
+            personal.Name = "Abraham";
+            personal.SurName = "Scott";
+            personal.Balance = 3000;
+            personal.DepositMoney(50);
+            personal.WithDrawMoney(1250);
+            Console.WriteLine($"{personal.Name} {personal.SurName} adlı kullanıcının bakiyesi: {personal.Balance}");
         }
     }
-    #region Dummy Code
-    //class DummyProtype : ICloneable
-    //{
-
-    //}
-    #endregion
-
 }
