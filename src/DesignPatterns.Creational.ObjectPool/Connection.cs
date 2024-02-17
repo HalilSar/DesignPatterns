@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.Creational.ObjectPool
 {
-    internal class Connection
+    public class Connection
     {
     }
 }

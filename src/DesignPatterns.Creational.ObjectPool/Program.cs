@@ -6,7 +6,11 @@ namespace DesignPatterns.Creational.ObjectPool
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Connection con = DataSource.GetConnection();
+            Connection con2 = DataSource.GetConnection();
+            Connection con3 = DataSource.GetConnection();
+            DataSource.Release(con);
+            Connection con4= DataSource.GetConnection();
         }
     }
 }

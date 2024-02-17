@@ -23,24 +23,28 @@ namespace DesignPatterns.Creational.ObjectPool
             }
         }
 
-        static   Connection GetConnection()
+        public  static Connection GetConnection()
         {
             if(instance.pool.Count==0)
             {
+                
                 Console.WriteLine("Pool nill");
+                return null;
             }
 
             Connection con = instance.pool[0];
+            instance.pool.Remove(instance.pool[0]);
             Console.WriteLine(con);
             return con;
         }
 
-        static void Release(Connection con)
+         public static void Release(Connection con)
         {
             if (con != null)
             {
                 instance.pool.Add(con);
             }
+            
         }
     }
 }
