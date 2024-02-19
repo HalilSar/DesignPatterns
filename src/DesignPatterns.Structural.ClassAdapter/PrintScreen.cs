@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Structural.ClassAdapter
 {
-    public class PrintAdapter :PrintScreen, IPrintScreen
+    public  class PrintScreen
     {
-        //  public void Print(string val);
-        public void Print(string val)
+        public void Screen(string val)
         {
-            this.Screen(val);
+            Console.WriteLine(val);
         }
     }
 }
