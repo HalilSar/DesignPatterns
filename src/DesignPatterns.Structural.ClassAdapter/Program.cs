@@ -6,7 +6,8 @@ namespace DesignPatterns.Structural.ClassAdapter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IPrintScreen print = new PrintAdapter();
+            print.Print("Hello World!");
         }
     }
 }
