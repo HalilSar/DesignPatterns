@@ -8,9 +8,11 @@ namespace DesignPatterns.Structural.ObjectAdapter
 {
     public  class PrintAdapter:ClientScreen
     {
+        private PrintScreen print = new PrintScreen();
         public override void Screen()
         {
-
+            print.PrintScreenMethod();
         }
+
     }
 }
