@@ -6,7 +6,9 @@ namespace DesignPatterns.Structural.ObjectAdapter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ClientScreen client = new PrintAdapter();
+            client.Screen();
+            Console.WriteLine("*********");
         }
     }
 }

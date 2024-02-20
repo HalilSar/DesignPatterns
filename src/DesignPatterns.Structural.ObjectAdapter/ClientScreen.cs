@@ -10,7 +10,7 @@ namespace DesignPatterns.Structural.ObjectAdapter
     {
         public virtual void Screen()
         {
-            Console.WriteLine("Screen method run at PrintScreen object.");
+            Console.WriteLine("Screen method run at ClientScreen object.");
         }
     }
 }
