@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Structural.ObjectAdapter
 {
-    public class PrintScreen
+    public class ClientScreen
     {
-        public void Screen()
+        public virtual void Screen()
         {
             Console.WriteLine("Screen method run at PrintScreen object.");
         }
     }
 }
-}
+
