@@ -8,14 +8,16 @@ namespace DesignPatterns.Structural.Bridge
 {
     public class PublishB : Publish
     {
+        private PrintB print = new PrintB();
         public void PublishBook()
         {
-            throw new NotImplementedException();
+            print.PrintRomanceBook();
         }
 
         public void PublishMagazine()
         {
-            throw new NotImplementedException();
+            print.PrintCookMagazine();
+
         }
     }
 }
