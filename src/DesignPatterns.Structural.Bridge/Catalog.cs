@@ -8,7 +8,7 @@ namespace DesignPatterns.Structural.Bridge
 {
     public abstract class Catalog
     {
-        public Publish publish;
+        protected Publish publish;
         public abstract void CreatePublish();
         public Catalog(Publish publish)
         {
