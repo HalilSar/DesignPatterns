@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Structural.Bridge
 {
-   public interface Print
+   public interface Publish
     {
         public void PublishBook();
         public void PublishMagazine();
