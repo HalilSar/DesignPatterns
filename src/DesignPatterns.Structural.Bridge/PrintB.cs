@@ -8,7 +8,7 @@ namespace DesignPatterns.Structural.Bridge
 {
     public  class PrintB
     {
-        public void PrintCookMagazine() => Console.WriteLine("PrintA: Cook Magazine Printed");
-        public void PrintRomanceBook() => Console.WriteLine("PrintA: Romance Book Printed");
+        public void PrintCookMagazine() => Console.WriteLine("PrintB: Cook Magazine Printed");
+        public void PrintRomanceBook() => Console.WriteLine("PrintB: Romance Book Printed");
     }
 }
