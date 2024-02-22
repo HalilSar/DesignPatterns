@@ -2,11 +2,11 @@
 
 namespace DesignPatterns.Structural.Facade
 {
-    public class ConcreteFacade : ComponentFacade
+    public class ConcreteClass
     {
         public void DoSomething()
         {
-            new ConcreteClass().DoSomething();
+           Console.WriteLine("ConcreteClass :DoSomething run");
         }
     }
 }
