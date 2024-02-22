@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Structural.Facade
 {
-    internal interface ComponentFacade
+    public interface ComponentFacade
     {
         void DoSomething();
     }
