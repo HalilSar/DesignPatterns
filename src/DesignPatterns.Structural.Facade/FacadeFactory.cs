@@ -14,7 +14,7 @@ namespace DesignPatterns.Structural.Facade
 
         }
 
-        public FacadeFactory GetInstance() => instance;
+        public static FacadeFactory GetInstance() => instance;
         public ComponentFacade GetFacade()
         {
             return new ConcreteFacade();

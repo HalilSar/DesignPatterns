@@ -7,6 +7,8 @@ namespace DesignPatterns.Structural.Facade
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            var factory = FacadeFactory.GetInstance();
+            factory.GetFacade().DoSomething();
         }
     }
 }
