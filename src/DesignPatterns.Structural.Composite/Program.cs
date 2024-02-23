@@ -6,7 +6,21 @@ namespace DesignPatterns.Structural.Composite
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Computer comp = new Computer();
+
+            Part mouse = new Mouse();
+            comp.AddPart(mouse);
+
+            Part keyboard = new Keyboard();
+            comp.AddPart(keyboard);
+
+            Part monitor = new Monitor();
+            comp.AddPart(monitor);
+
+            Part ram = new RAM();
+            comp.AddPart(ram);
+
+            Console.WriteLine("Total : " + comp.GetPrice().ToString());
         }
     }
 }
