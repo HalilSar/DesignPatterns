@@ -6,7 +6,8 @@ namespace DesignPatterns.Structural.Decorator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            KitchenStuff stuff = new CoffeeCup();
+            stuff.Produce();
         }
     }
 }
