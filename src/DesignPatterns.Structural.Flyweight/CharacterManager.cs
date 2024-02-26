@@ -11,11 +11,19 @@ namespace DesignPatterns.Structural.Flyweight
 
         private static CharacterManager manager = new CharacterManager();
         private  List<Character> characters = new List<Character>();
-        private Character[,] document = new Character[50,50];
+        private Character[][] document = new Character[50][];
 
         private CharacterManager()
         {
+            CreateDocument();
+        }
 
+        void CreateDocument()
+        {
+            for (int i = 0; i < document.Length; i++)
+            {
+                document[i] = new Character[50];
+            }
         }
 
         public static CharacterManager GetInstance() => manager;
@@ -46,8 +54,8 @@ namespace DesignPatterns.Structural.Flyweight
         {
             for (int i = 0; i < line.Length; i++)
             {
-                string character = line.Substring(i, i + 1);
-                document[lineNo, i] = GetCharacter(character);
+                string character = line.Substring(i, 1);
+                document[lineNo][ i] = GetCharacter(character);
             }
         }
 
@@ -57,15 +65,15 @@ namespace DesignPatterns.Structural.Flyweight
             {
                 for (int j  = 0;  j < 50 ; j++)
                 {
-                    if (manager.document[i, j] != null)
+                    if (manager.document[i][ j] != null)
                     {
-                        Console.WriteLine(GetCharacter(manager.document[i, j].ToString()));
+                        Console.Write(GetCharacter(manager.document[i][ j].ToString()));
                     }
 
                     else break;
                 }
 
-                if (manager.document[i,0]!=null)
+                if (manager.document[i][0]!=null)
                 {
                     Console.WriteLine("");
                 }

@@ -15,10 +15,13 @@ namespace DesignPatterns.Structural.Flyweight
 
         }
 
-        public string CharacterValue { 
+        public string CharacterValue {
             get {
                 return this.characterValue;
-            } set { value= characterValue; } }
-        
-    }
+            } set { value = characterValue; } 
+        }
+
+        public override string ToString() => this.CharacterValue;
+
+    } 
 }
