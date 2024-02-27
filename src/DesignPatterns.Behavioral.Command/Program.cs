@@ -6,7 +6,11 @@ namespace DesignPatterns.Behavioral.Command
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("************");
+            Control control = new Control();
+            control.Press(0);
+            control.Press(1);
+            Console.WriteLine("************");
         }
     }
 }

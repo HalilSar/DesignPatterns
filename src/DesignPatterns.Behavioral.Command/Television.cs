@@ -10,7 +10,7 @@ namespace DesignPatterns.Behavioral.Command
     {
         public void Open() => Console.WriteLine("Tv opened.");
 
-        public void Close() => Console.WriteLine("Tv opened.");
+        public void Close() => Console.WriteLine("Tv closed.");
 
         public void Change() => Console.WriteLine("Channel Changed.");
     }
