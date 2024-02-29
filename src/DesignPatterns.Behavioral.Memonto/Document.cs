@@ -9,8 +9,7 @@ namespace DesignPatterns.Behavioral.Memonto
    public class Document
     {
         private Dictionary<int,string> lines;
-
-
+      
         public Document( Dictionary<int, string> lines ) 
         {
             this.lines = lines;
@@ -18,7 +17,7 @@ namespace DesignPatterns.Behavioral.Memonto
 
         public void AddLine(int index, string line) => lines.Add(index, line);
         public void RemoveLine(int index, string line) => lines.Remove(index);
-        public void CreateMemonto() => new Memonto(lines.ToArray);
+        // public void CreateMemonto() => new Memonto(lines.ToArray());
 
         public void SetMemonto(Memonto memonto)
         {
