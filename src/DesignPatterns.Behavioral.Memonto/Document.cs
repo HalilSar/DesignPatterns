@@ -8,16 +8,17 @@ namespace DesignPatterns.Behavioral.Memonto
 {
    public class Document
     {
-        private Dictionary<int,string> lines;
+        private List<string> lines;
       
-        public Document( Dictionary<int, string> lines ) 
+        public Document( List<string> lines ) 
         {
             this.lines = lines;
+            
         }
 
-        public void AddLine(int index, string line) => lines.Add(index, line);
-        public void RemoveLine(int index, string line) => lines.Remove(index);
-        // public void CreateMemonto() => new Memonto(lines.ToArray());
+        public void AddLine( string line) => lines.Add( line);
+        public void RemoveLine(int index) => lines.Remove(lines[index]);
+        public void CreateMemonto() => new Memonto(lines.ToArray());
 
         public void SetMemonto(Memonto memonto)
         {
@@ -26,7 +27,7 @@ namespace DesignPatterns.Behavioral.Memonto
             for (int i = 0; i < templines.Length; i++)
             {
                 string line = (string)templines[i];
-                lines.Add(i,line);
+                lines.Add(line);
             }
         }
 
@@ -36,7 +37,7 @@ namespace DesignPatterns.Behavioral.Memonto
             StringBuilder temp = new StringBuilder();
             for (int i = 0; i < lines.Count; i++)
             {
-                temp.Append(lines.GetValueOrDefault(i)).Append(" \n");
+                temp.Append(lines[i]).Append(" \n");
 
             }
             return temp.ToString();
