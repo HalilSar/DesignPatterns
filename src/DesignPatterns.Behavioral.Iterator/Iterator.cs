@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Behavioral.Iterator
 {
-  public interface Menu
-  {
-        Iterator GetIterator();
+  public interface Iterator
+    {
+        bool HasNext();
+        object next();
   }
 }
