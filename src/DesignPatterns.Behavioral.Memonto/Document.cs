@@ -10,15 +10,16 @@ namespace DesignPatterns.Behavioral.Memonto
     {
         private List<string> lines;
       
-        public Document( List<string> lines ) 
+        public Document( ) 
         {
-            this.lines = lines;
+            this.lines = new  List<string>();
             
         }
 
         public void AddLine( string line) => lines.Add( line);
+        public void AddLine( int id, string line) => lines[id]= line;
         public void RemoveLine(int index) => lines.Remove(lines[index]);
-        public void CreateMemonto() => new Memonto(lines.ToArray());
+        public Memonto CreateMemonto() => new Memonto(lines.ToArray());
 
         public void SetMemonto(Memonto memonto)
         {
