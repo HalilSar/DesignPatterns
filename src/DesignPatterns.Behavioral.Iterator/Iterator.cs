@@ -3,6 +3,6 @@
     public interface Iterator
     {
         bool HasNext();
-        object next();
+        object Next();
   }
 }
