@@ -41,6 +41,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Behavioral.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Behavioral.Iterator", "DesignPatterns.Behavioral.Iterator\DesignPatterns.Behavioral.Iterator.csproj", "{BB7B4046-4EEC-497B-8369-2A8CB58C9911}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Behavioral.Memonto", "DesignPatterns.Behavioral.Memonto\DesignPatterns.Behavioral.Memonto.csproj", "{49AF1082-CF86-4B9F-A2EE-D2B85BE9E156}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{BB7B4046-4EEC-497B-8369-2A8CB58C9911}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB7B4046-4EEC-497B-8369-2A8CB58C9911}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB7B4046-4EEC-497B-8369-2A8CB58C9911}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49AF1082-CF86-4B9F-A2EE-D2B85BE9E156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49AF1082-CF86-4B9F-A2EE-D2B85BE9E156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49AF1082-CF86-4B9F-A2EE-D2B85BE9E156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49AF1082-CF86-4B9F-A2EE-D2B85BE9E156}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -132,6 +138,7 @@ Global
 		{1F725396-0FA8-4BC1-98A4-91CE71CBB757} = {FBE4C25D-FD3A-4EB3-999D-C2BEDFD75D83}
 		{2B41CFCB-7BEC-4F68-B01F-1707ED5D2779} = {0C81E935-D9C7-4D0E-A43C-FA719ED8C4EF}
 		{BB7B4046-4EEC-497B-8369-2A8CB58C9911} = {0C81E935-D9C7-4D0E-A43C-FA719ED8C4EF}
+		{49AF1082-CF86-4B9F-A2EE-D2B85BE9E156} = {0C81E935-D9C7-4D0E-A43C-FA719ED8C4EF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E60013F3-BF7E-46CB-9D42-6FD455AC81E0}
