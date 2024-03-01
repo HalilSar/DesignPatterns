@@ -6,7 +6,14 @@ namespace DesignPatterns.Behavioral.Observer
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            NewsPaper sun = new Sun();
+            NewsPaper guardian = new Guardian();
+            Subscriber subs = new Customer("John", "Smith");
+            subs.AddSubscribe(sun);
+            Subscriber subs2 = new Customer("Jane", "Smith");
+            subs2.AddSubscribe(guardian);
+            
+
         }
     }
 }
