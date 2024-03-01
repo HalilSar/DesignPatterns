@@ -6,7 +6,10 @@ namespace DesignPatterns.Behavioral.State
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Engine engine = new Engine();
+            engine.Stop();
+            engine.Start();
+            
         }
     }
 }

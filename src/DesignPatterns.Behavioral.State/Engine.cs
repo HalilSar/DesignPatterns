@@ -13,6 +13,7 @@ namespace DesignPatterns.Behavioral.State
         }
 
         public void Stop() => this.state.Off(this);
+        public void Start() => this.state.On(this);
 
         public void AddState(State state) => this.state = state;
     }
