@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace DesignPatterns.Behavioral.Observer
 {
-    public class Gurdian : NewsPaper
+    public class Guardian : NewsPaper
     {
         private List<Subscriber> subcscribers = new List<Subscriber>();
         public void AddSubscriber(Subscriber subscriber)
