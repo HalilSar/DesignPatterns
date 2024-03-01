@@ -5,7 +5,7 @@ namespace DesignPatterns.Behavioral.Observer
 {
     public class Guardian : NewsPaper
     {
-        private List<Subscriber> subcscribers = new List<Subscriber>();
+        private List<Subscriber> subscribers = new List<Subscriber>();
         public void AddSubscriber(Subscriber subscriber)
         {
             subscribers.Add(subscriber);
@@ -18,7 +18,12 @@ namespace DesignPatterns.Behavioral.Observer
 
         public List<Subscriber> GetNewsPaper()
         {
-            return this.subcscribers;
+            return this.subscribers;
+        }
+
+        public override string ToString()
+        {
+            return "Guardian";
         }
     }
 }

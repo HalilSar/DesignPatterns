@@ -8,17 +8,22 @@ namespace DesignPatterns.Behavioral.Observer
         private List<Subscriber> subcscribers = new List<Subscriber>();
         public void AddSubscriber(Subscriber subscriber)
         {
-            subscribers.Add(subscriber);
+            subcscribers.Add(subscriber);
         }
 
         public void DeleteSubscriber(Subscriber subscriber)
         {
-            subscribers.Remove(subscriber);
+            subcscribers.Remove(subscriber);
         }
 
         public List<Subscriber> GetNewsPaper()
         {
             return this.subcscribers;
+        }
+
+        public override string ToString()
+        {
+            return "Sun";
         }
     }
 }
