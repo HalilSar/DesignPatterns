@@ -20,21 +20,21 @@ namespace DesignPatterns.Behavioral.Chain
         }
         public void Check(Coin money)
         {
-            Console.WriteLine("" + this + "");
+            Console.WriteLine("The next object can only" + this);
             if(money.value != this.value)
             {
-                Console.WriteLine("" + this + "");
+                Console.WriteLine("Okay, no we're moving to next object in the chain");
                 if (GetNext() != null) GetNext().Check(money);
 
                 else
                 {
-                    Console.WriteLine("Zincirin sonundayız Coin " + money.ToString() +" " + "bu otomat için uygun değil");
+                    Console.WriteLine("We are at end of the chain. " + money.ToString() +" is not suitable for this vending machine.");
                 }
             }
             else
             {
                 coins.Add(money);
-                Console.WriteLine(this.ToString() +" Accepted by otomat " );
+                Console.WriteLine(this.ToString() +" Accepted by Vending Machine. " );
 
             }
         }
