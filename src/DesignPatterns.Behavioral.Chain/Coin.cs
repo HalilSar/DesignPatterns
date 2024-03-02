@@ -13,6 +13,11 @@ namespace DesignPatterns.Behavioral.Chain
         private Coin next;
 
         public Coin GetNext() => next;
+        public Coin SetNext(Coin next)
+        {
+            this.next = next;
+            return this;
+        }
         public void Check(Coin money)
         {
             Console.WriteLine("" + this + "");

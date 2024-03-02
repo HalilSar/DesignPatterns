@@ -7,8 +7,20 @@ namespace DesignPatterns.Behavioral.Chain
         private static Coin chain;
         static void Main(string[] args)
         {
-            
-            Console.WriteLine("Hello World!");
+            chain = new OneCoin().SetNext(new TwoCoin().SetNext(new ThreeCoin().SetNext(new FourCoin())));
+            AddCoin(new OneCoin());
+            AddCoin(new TwoCoin());
+            AddCoin(new ThreeCoin());
+            AddCoin(new FourCoin());
+
+        }
+
+        private static void AddCoin(Coin coin)
+        {
+            Console.WriteLine("+-------------------------+");
+            Console.WriteLine("Otomat "+coin.ToString() + "atıldı");
+            chain.Check(coin);
+            Console.WriteLine("+-------------------------+");
         }
     }
 }
