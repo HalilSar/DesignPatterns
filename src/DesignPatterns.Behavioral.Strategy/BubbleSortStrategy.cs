@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Behavioral.Strategy
 {
-    public class QuickSortStrategy : ISortStrategy
+    public class BubbleSortStrategy : ISortStrategy
     {
         public void Sort(int[] array)
         {
