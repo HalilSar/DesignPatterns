@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Behavioral.Strategy
 {
-    public class BubbleSortStrategy : ISortStrategy
+    public class QuickSortStrategy : ISortStrategy
     {
         public void Sort(int[] array)
         {
-            Console.WriteLine("Sorting array using buble sort");
+            Console.WriteLine("Sorting array using bubble sort");
             int n = array.Length;
             for (int i = 0; i < n-1; i++)
             {
