@@ -12,17 +12,16 @@ namespace DesignPatterns.Behavioral.Strategy
         {
             Console.WriteLine("Sorting array using insertion sort.");
             int n = array.Length;
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < n; ++i)
             {
                 int key = array[i];
-                int j = 1-i;
+                int j = i-1;
                 while ( j >= 0 && array[j]> key)
-                {
-                    if (array[j]>array[j+1])
-                    {
-                        array[j + 1] = array[j];
-                    }
+                {                               
+                    array[j + 1] = array[j];
+                    j -= 1;
                 }
+                array[j + 1] = key;
             }
             PrintArray(array);
         }
