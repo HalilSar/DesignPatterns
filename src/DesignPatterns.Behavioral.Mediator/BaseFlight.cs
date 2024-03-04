@@ -4,27 +4,25 @@ namespace DesignPatterns.Behavioral.Mediator
 {
     public abstract class BaseFlight : Flight
     {
-        public bool completedLandingClearance;
-        public bool completedTakeOffClearance;
-        public bool landingClearance;  // completedTakeOffClearance
-        public bool takeoffClearance;
+        private bool completedLandingClearance;
+        private bool completedTakeOffClearance;
+        private bool landingClearance;  
+        private bool takeoffClearance;
 
-        public Flight flight;
-        public abstract bool IsLandingClearance();
-   
-
-        public abstract bool IsTakeOffClearance();
-
-
-        public void RequestLandingClearance()
+        public ControlTower controlTower;
+        public bool IsLandingClearance()
         {
-            throw new System.NotImplementedException();
+            return landingClearance;
         }
 
-        public void RequestTakeOffClearance()
+        public bool IsTakeOffClearance()
         {
-            throw new System.NotImplementedException();
+            return takeoffClearance;
         }
+
+        public abstract void RequestLandingClearance();
+
+        public abstract void RequestTakeOffClearance();
 
         public void SetCompleteLandingClearance(bool value)
         {
