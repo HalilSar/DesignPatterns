@@ -38,7 +38,7 @@ namespace DesignPatterns.Behavioral.Mediator
                 }
                 else
                 {
-                    if(flight != landingClearanceFlight)
+                    if(!flight.Equals(landingClearanceFlight))
                     {
                         Console.WriteLine("Tower: " + landingClearanceFlight.ToString() + " landing clearence. Therefore, landing clearance cannot be granted for this flight number: " + flight.ToString());
                     }
@@ -74,7 +74,7 @@ namespace DesignPatterns.Behavioral.Mediator
                 }
                 else
                 {
-                    if (flight != takeOffClearanceFlight)  
+                    if (!flight.Equals(takeOffClearanceFlight))  
                     {
                         Console.WriteLine("Tower: " + takeOffClearanceFlight.ToString() + " take off clearence. Therefore, take off clearance cannot be granted for this flight number: " + flight.ToString());
                     }
