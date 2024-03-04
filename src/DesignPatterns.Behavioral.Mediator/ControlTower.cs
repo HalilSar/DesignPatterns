@@ -7,5 +7,6 @@ namespace DesignPatterns.Behavioral.Mediator
         void GrantTakeoffClearance(Flight flight);  
         void GrantLandingClearance(Flight flight); 
         void AddFlight(Flight flight);  
+        void RemoveFlight(Flight flight);
     }
 }
