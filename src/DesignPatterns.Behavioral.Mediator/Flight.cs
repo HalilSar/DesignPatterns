@@ -10,7 +10,7 @@
         void SetLandingClearance(bool value);
 
         void SetCompleteLandingClearance(bool value);
-        void SetCompleteTakeOfClearance(bool value);
+        void SetCompleteTakeOffClearance(bool value);
 
     }
 }
