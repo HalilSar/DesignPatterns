@@ -18,13 +18,13 @@ namespace DesignPatterns.Behavioral.Mediator
         public void GrantLandingClearance(Flight flight)
         {
             bool landingClearence = false;
-            Flight landingClearanceFlight;
+            Flight landingClearanceFlight = null;
             if (flights.Contains(flight))
             {
                 for (int i = 0; i < flights.Count; i++)
                 {
                     Flight tempFlight = flights[i];
-                    if (tempFlight.IsLandingClearence())
+                    if (tempFlight.IsLandingClearance())
                     {
                         landingClearence = true;
                         landingClearanceFlight = tempFlight;
@@ -33,34 +33,34 @@ namespace DesignPatterns.Behavioral.Mediator
                 }
                 if (!landingClearence)
                 {
-                    flight.SetLandingClearence(true);
+                    flight.SetLandingClearance(true);
                     Console.WriteLine("Tower: Grant Landing Clearance to " + flight.ToString());
                 }
                 else
                 {
-                    if(!flights.Contains(landingClearanceFlight))
+                    if(flight != landingClearanceFlight)
                     {
-                        Console.WriteLine("Tower: " + landingClearence.ToString() + " landing clearence. Therefore, landing clearance cannot be granted for this flight number: " + flight.ToString());
+                        Console.WriteLine("Tower: " + landingClearanceFlight.ToString() + " landing clearence. Therefore, landing clearance cannot be granted for this flight number: " + flight.ToString());
                     }
                 }
             }
 
             else
             {
-                Console.WriteLine(flight.ToString + " flight not be flights list.");
+                Console.WriteLine(flight.ToString() + " flight not be flights list.");
             }
         }
 
         public void GrantTakeoffClearance(Flight flight)
         {
             bool takeOffClearance = false;
-            Flight takeOffClearanceFlight;
+            Flight takeOffClearanceFlight = null; 
             if (flights.Contains(flight))
             {
                 for (int i = 0; i < flights.Count; i++)
                 {
                     Flight tempFlight = flights[i];
-                    if (tempFlight.IsLandingClearence())
+                    if (tempFlight.IsTakeOffClearance())
                     {
                         takeOffClearance = true;
                         takeOffClearanceFlight = tempFlight;
@@ -69,12 +69,12 @@ namespace DesignPatterns.Behavioral.Mediator
                 }
                 if (!takeOffClearance)
                 {
-                    flight.SetTakeOffClearence(true);
+                    flight.SetTakeOffClearance(true);
                     Console.WriteLine("Tower: Grant Take off Clearance to " + flight.ToString());
                 }
                 else
                 {
-                    if (!flights.Contains(takeOffClearanceFlight))
+                    if (flight != takeOffClearanceFlight)  
                     {
                         Console.WriteLine("Tower: " + takeOffClearanceFlight.ToString() + " take off clearence. Therefore, take off clearance cannot be granted for this flight number: " + flight.ToString());
                     }
@@ -82,7 +82,7 @@ namespace DesignPatterns.Behavioral.Mediator
             }
             else
             {
-                Console.WriteLine(flight.ToString + " flight not be flights list.");
+                Console.WriteLine(flight.ToString() + " flight not be flights list.");
             }
 
         }
