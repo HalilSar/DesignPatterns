@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.Behavioral.Template
 {
-    public interface Document
+    public class Pdf : Document
     {
     }
 }

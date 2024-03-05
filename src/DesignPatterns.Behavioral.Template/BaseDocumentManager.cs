@@ -7,9 +7,10 @@ namespace DesignPatterns.Behavioral.Template
         public Document GetDocument(string name)
         {
             Document document = OpenDocument(name);
+            return document;
         }
 
-        public abstract void CheckDocument();
-        public abstract void OpenDocument(string name);
+        public abstract void CheckDocument(string name);
+        public abstract Document OpenDocument(string name);
     }
 }
