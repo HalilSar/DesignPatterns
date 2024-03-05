@@ -14,7 +14,7 @@ namespace DesignPatterns.Behavioral.Interpreter
 
         private Expression Parse(string value)
         {
-            if (value.Contains(OpreationIdentifier.MULTIPLICATION))
+            if (value.Contains(OperationIdentifier.MULTIPLICATION))
                 return new MultiplicationExperession(value);
             return null;
         }
