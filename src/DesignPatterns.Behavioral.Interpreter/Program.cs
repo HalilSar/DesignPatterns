@@ -6,7 +6,8 @@ namespace DesignPatterns.Behavioral.Interpreter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string formula = "10 times 10";
+            new Interpreter().Interpret(formula);
         }
     }
 }
