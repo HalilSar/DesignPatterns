@@ -6,7 +6,17 @@ namespace DesignPatterns.Behavioral.Visitor
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Printer hp = new HRPrinter();
+            Printer lex = new LexMarkPrinter();
+
+            hp.Print();
+            lex.Print();
+
+            Visitor visitor = new FaxVisitor();
+            hp.Accept(visitor);
+            lex.Accept(visitor);
+
+            Console.WriteLine("+-----------------------------+");
         }
     }
 }
