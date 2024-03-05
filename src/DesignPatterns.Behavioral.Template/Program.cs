@@ -6,7 +6,8 @@ namespace DesignPatterns.Behavioral.Template
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            BaseDocumentManager documentManager = new DocumentManager();
+            Document document = documentManager.GetDocument("wolfhunting.pdf ");
         }
     }
 }
