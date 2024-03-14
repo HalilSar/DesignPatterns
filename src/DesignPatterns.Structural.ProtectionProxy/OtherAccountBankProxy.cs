@@ -9,10 +9,7 @@ namespace DesignPatterns.Structural.ProtectionProxy
         {
             this.accountBank = accountBank;
         }
-        public void SetAccount()
-        {
-            throw new Exception("You do not permission.");
-        }
+
         
         public bool Cancel()
         {
