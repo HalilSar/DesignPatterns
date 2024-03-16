@@ -10,6 +10,7 @@
         void SetSurName(string surName);
         void GetAccountStatus();
         void SetAccountStatus(decimal money);
-        bool Cancel();
+        void Cancel();
+        bool CancelStatus();
     }
 }
