@@ -59,7 +59,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Behavioral.T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Behavioral.Interpreter", "DesignPatterns.Behavioral.Interpreter\DesignPatterns.Behavioral.Interpreter.csproj", "{0FB3660C-1D4B-4E83-A29B-061DECA38E3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Structural.ProtectionProxy", "DesignPatterns.Structural.ProtectionProxy\DesignPatterns.Structural.ProtectionProxy.csproj", "{4FC86AB5-EFE1-41B0-9A96-120C5B0E9403}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Structural.ProtectionProxy", "DesignPatterns.Structural.ProtectionProxy\DesignPatterns.Structural.ProtectionProxy.csproj", "{4FC86AB5-EFE1-41B0-9A96-120C5B0E9403}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Structural.DynamicProxy", "DesignPatterns.Structural.DynamicProxy\DesignPatterns.Structural.DynamicProxy.csproj", "{19F7FDB5-3EB2-4C55-9F81-34D32E885F03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +173,10 @@ Global
 		{4FC86AB5-EFE1-41B0-9A96-120C5B0E9403}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FC86AB5-EFE1-41B0-9A96-120C5B0E9403}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FC86AB5-EFE1-41B0-9A96-120C5B0E9403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19F7FDB5-3EB2-4C55-9F81-34D32E885F03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19F7FDB5-3EB2-4C55-9F81-34D32E885F03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19F7FDB5-3EB2-4C55-9F81-34D32E885F03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19F7FDB5-3EB2-4C55-9F81-34D32E885F03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -202,6 +208,7 @@ Global
 		{F89F1AFE-ABD0-405B-AAE5-4BC60848E8D4} = {0C81E935-D9C7-4D0E-A43C-FA719ED8C4EF}
 		{0FB3660C-1D4B-4E83-A29B-061DECA38E3C} = {0C81E935-D9C7-4D0E-A43C-FA719ED8C4EF}
 		{4FC86AB5-EFE1-41B0-9A96-120C5B0E9403} = {FBE4C25D-FD3A-4EB3-999D-C2BEDFD75D83}
+		{19F7FDB5-3EB2-4C55-9F81-34D32E885F03} = {FBE4C25D-FD3A-4EB3-999D-C2BEDFD75D83}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E60013F3-BF7E-46CB-9D42-6FD455AC81E0}
