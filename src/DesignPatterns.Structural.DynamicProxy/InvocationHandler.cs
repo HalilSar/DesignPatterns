@@ -2,6 +2,6 @@
 {
     public interface InvocationHandler
     {
-        void Invoke();
+        BankAccount Invoke();
     }
 }
