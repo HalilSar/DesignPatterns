@@ -1,13 +1,13 @@
 ﻿namespace DesignPatterns.Structural.DynamicProxy
 {
-    public class BankAccount : IBankAccount
+    public class IBankAccount : IBankAccount
     {
         private string name;
         private string surName;
         private decimal accountStatus = 0;
         private bool canceled = false;
 
-        public BankAccount(string name, string surName, decimal accountStatus, bool canceled)
+        public IBankAccount(string name, string surName, decimal accountStatus, bool canceled)
         {
             SetName(name);
             SetSurName(surName);

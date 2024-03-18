@@ -2,15 +2,15 @@
 {
     public class MyAccountInvocationHandler : InvocationHandler
     {
-        private BankAccount account;
-        public MyAccountInvocationHandler(BankAccount account)
+        private IBankAccount account;
+        public MyAccountInvocationHandler(IBankAccount account)
         {
             this.account = account;
         }
 
-        public BankAccount Invoke()
+        public IBankAccount Invoke()
         {
-            return this.account
+            return this.account;
         }
 
        
