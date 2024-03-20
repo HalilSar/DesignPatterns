@@ -4,7 +4,7 @@ using System.Dynamic;
 using static System.Console;
 namespace DesignPatterns.Structural.DynamicProxy
 {
-    public class Log<T> : DynamicObject
+    public class Log<T> : DynamicObject where T: class,new()
     {
         private readonly T subject;
         private Dictionary<string, int> methodCallCount = new Dictionary<string, int>();
@@ -16,6 +16,7 @@ namespace DesignPatterns.Structural.DynamicProxy
             {
                 throw new ArgumentException("I must be an interface type!");
             }
+            return new Log<T>(new T()).ActLike<I>();
         }
         public override bool TryInvokeMember(InvokeMemberBinder binder, object[] args, out object result)
         {
