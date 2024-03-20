@@ -7,12 +7,7 @@
         private decimal accountStatus = 0;
         private bool canceled = false;
 
-        public BankAccount(string name, string surName, decimal accountStatus, bool canceled)
-        {
-            SetName(name);
-            SetSurName(surName);
-            SetAccountStatus(accountStatus);
-        }
+ 
         public void Cancel()
         {
             this.canceled = true;

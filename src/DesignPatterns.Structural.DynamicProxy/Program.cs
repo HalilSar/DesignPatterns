@@ -6,8 +6,12 @@ namespace DesignPatterns.Structural.DynamicProxy
     {
         static void Main(string[] args)
         {
-            //var bankAccount = new Log(new BankAccount("John", "Smith", 10000,false)).As<IBankAccount>();
-            Console.WriteLine("Hello World!");
+            var bankAccount = Log<BankAccount>.As<IBankAccount>();
+            bankAccount.SetName("John");
+            bankAccount.SetSurName("Smith");
+            bankAccount.SetAccountStatus(100000000);
+            bankAccount.WithDrawMoney(3);
+            bankAccount.GetAccountStatus();
         }
     }
 }
