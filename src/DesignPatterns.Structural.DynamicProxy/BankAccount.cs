@@ -1,18 +1,13 @@
 ﻿namespace DesignPatterns.Structural.DynamicProxy
 {
-    public class IBankAccount : IBankAccount
+    public class BankAccount : IBankAccount
     {
         private string name;
         private string surName;
         private decimal accountStatus = 0;
         private bool canceled = false;
 
-        public IBankAccount(string name, string surName, decimal accountStatus, bool canceled)
-        {
-            SetName(name);
-            SetSurName(surName);
-            SetAccountStatus(accountStatus);
-        }
+ 
         public void Cancel()
         {
             this.canceled = true;
