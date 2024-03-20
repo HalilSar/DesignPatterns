@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Dynamic;
+using System.Text;
 using static System.Console;
 namespace DesignPatterns.Structural.DynamicProxy
 {
@@ -9,6 +10,16 @@ namespace DesignPatterns.Structural.DynamicProxy
     {
         private readonly T subject;
         private Dictionary<string, int> methodCallCount = new Dictionary<string, int>();
+        public string Info 
+        { 
+            get
+            {
+                var stringBuilder = new StringBuilder();
+                foreach (var k in methodCallCount)
+                    stringBuilder.AppendLine($"{k.Key} called {k.Value} time(s)");
+                return stringBuilder.ToString();            
+            } 
+        }
         public Log(T subject) => this.subject = subject;
 
         public static I As<I>() where I:class
@@ -35,6 +46,11 @@ namespace DesignPatterns.Structural.DynamicProxy
                 result = null;
                 return false;
             }
+        }
+
+        public override string ToString()
+        {
+            return $"{Info}\n{subject}";
         }
     }
 }
