@@ -8,7 +8,7 @@ namespace DesignPatterns.Behavioral.Chain
 {
     public class OneCoin:Coin
     {
-
+       // Return String
         public override string ToString()
         {
             return "One Coin";
