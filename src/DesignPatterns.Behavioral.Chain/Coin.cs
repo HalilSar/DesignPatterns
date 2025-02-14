@@ -11,13 +11,18 @@ namespace DesignPatterns.Behavioral.Chain
         private List<Coin> coins = new List<Coin>();
         public int value;
         private Coin next;
-
+        // return coin
         public Coin GetNext() => next;
+
+	// Return Coin
+	// Parameter Coin next
         public Coin SetNext(Coin next)
         {
             this.next = next;
             return this;
         }
+
+	// parameter Coin money
         public void Check(Coin money)
         {
             Console.WriteLine("The next object can only" + this);
