@@ -14,7 +14,7 @@ namespace DesignPatterns.Behavioral.Chain
             AddCoin(new FourCoin());
 
         }
-
+        // Parameter : Coin coin
         private static void AddCoin(Coin coin)
         {
             Console.WriteLine("+-------------------------+");
