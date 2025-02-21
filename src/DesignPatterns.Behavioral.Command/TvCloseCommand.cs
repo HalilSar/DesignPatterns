@@ -8,8 +8,9 @@ namespace DesignPatterns.Behavioral.Command
 {
     public class TvCloseCommand : Command
     {
-        private Television tv;
-        public TvCloseCommand( Television tv)
+	private Television tv;
+     // Paramter : Television tv
+	public TvCloseCommand( Television tv)
         {
             this.tv = tv;
         }
