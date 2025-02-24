@@ -9,6 +9,7 @@ namespace DesignPatterns.Behavioral.Command
     public class TvOpenCommand : Command
     {
         private Television tv;
+	// Parameter : Television tv
         public TvOpenCommand( Television tv)
         {
             this.tv = tv;
