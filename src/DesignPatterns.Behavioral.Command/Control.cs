@@ -15,7 +15,8 @@ namespace DesignPatterns.Behavioral.Command
             commands[0] = new TvOpenCommand(tv);
             commands[1] = new TvCloseCommand(tv);
         }
-
+        
+	// Parameter : int command
         public void Press(int command)
         {
             if ( command>commands.Length  ||  command < 0)
