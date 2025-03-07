@@ -7,7 +7,8 @@ namespace DesignPatterns.Behavioral.Interpreter
         private int op1;
         private int op2;
         private string formula;
-
+        
+	
         public MultiplicationExperession(string formula)
         {
             int[] ops = Parse(formula);
@@ -16,7 +17,9 @@ namespace DesignPatterns.Behavioral.Interpreter
             this.formula = formula;
 
         }
-
+        
+	// Return    : int[]
+	// Parameter : string formula
         private int[] Parse(string formula)
         {
             string[] ops = formula.Split(OperationIdentifier.MULTIPLICATION);
