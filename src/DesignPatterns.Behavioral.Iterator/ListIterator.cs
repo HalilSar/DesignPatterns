@@ -10,6 +10,8 @@ namespace DesignPatterns.Behavioral.Iterator
         {
             this.beverages = beverages;
         }
+
+	// return bool
         public bool HasNext()
         {
             if (order >= beverages.Count || beverages[order] == null)
@@ -19,7 +21,8 @@ namespace DesignPatterns.Behavioral.Iterator
 
             else return true;
         }
-
+        
+	// return object
         public object Next()
         {
             Beverage beverage = beverages[order];
