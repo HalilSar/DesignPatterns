@@ -2,7 +2,9 @@
 {
     public interface Iterator
     {
-        bool HasNext();
+        // return bool
+	bool HasNext();
+	// return object
         object Next();
   }
 }
