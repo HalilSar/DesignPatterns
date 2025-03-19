@@ -8,6 +8,7 @@ namespace DesignPatterns.Behavioral.Iterator
 {
   public interface Menu
   {
-        Iterator GetIterator();
+       // return Iterator
+       Iterator GetIterator();
   }
 }
