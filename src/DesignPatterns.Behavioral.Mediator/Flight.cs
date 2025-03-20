@@ -6,11 +6,14 @@
         void RequestTakeOffClearance();
         bool IsLandingClearance();
         bool IsTakeOffClearance();
-        void SetTakeOffClearance(bool value);
+        // parameter bool value
+	void SetTakeOffClearance(bool value);
+	// parameter bool value
         void SetLandingClearance(bool value);
-
+        // parameter bool value
         void SetCompleteLandingClearance(bool value);
-        void SetCompleteTakeOffClearance(bool value);
+        // parameter bool value
+	void SetCompleteTakeOffClearance(bool value);
 
     }
 }
