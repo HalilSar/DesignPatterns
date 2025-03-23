@@ -10,11 +10,13 @@ namespace DesignPatterns.Behavioral.Mediator
         private bool takeoffClearance;
 
         public ControlTower controlTower;
-        public bool IsLandingClearance()
+
+        // return bool
+	public bool IsLandingClearance()
         {
             return landingClearance;
         }
-
+        // return bool
         public bool IsTakeOffClearance()
         {
             return takeoffClearance;
@@ -23,7 +25,7 @@ namespace DesignPatterns.Behavioral.Mediator
         public abstract void RequestLandingClearance();
 
         public abstract void RequestTakeOffClearance();
-
+        // parameter:  bool value
         public void SetCompleteLandingClearance(bool value)
         {
             this.completedLandingClearance = value;
@@ -31,19 +33,19 @@ namespace DesignPatterns.Behavioral.Mediator
             Console.WriteLine(this.ToString() + "   completed landing clearance");
 
         }
-
+        // parameter : bool value
         public void SetCompleteTakeOffClearance(bool value)
         {
             this.completedTakeOffClearance = value;
             this.takeoffClearance = false;
             Console.WriteLine(this.ToString() + "   completed take off clearance");
         }
-
+        // parameter : bool value
         public void SetLandingClearance(bool value)
         {
             this.landingClearance=value;
         }
-
+        // parameter : bool value
         public void SetTakeOffClearance(bool value)
         {
             this.takeoffClearance = value;
