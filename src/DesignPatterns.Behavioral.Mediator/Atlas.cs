@@ -18,7 +18,8 @@ namespace DesignPatterns.Behavioral.Mediator
         {
             controlTower.GrantTakeoffClearance(this);
         }
-        public override string ToString()
+        // Return string
+	public override string ToString()
         {
             return "Atlas flight no : 99";
         }
