@@ -6,7 +6,8 @@ namespace DesignPatterns.Behavioral.Mediator
     public class AtaturkAirportControlTower : ControlTower
     {
         private List<Flight> flights = new List<Flight>();
-        public void AddFlight(Flight flight)
+        // parameter Flight flight
+	public void AddFlight(Flight flight)
         {
             if (!flights.Contains(flight))
             {
@@ -14,7 +15,7 @@ namespace DesignPatterns.Behavioral.Mediator
                 Console.WriteLine("Tower: Add to  " + flight.ToString() + "at flight list ");
             }
         }
-
+        // parameter Flight flight
         public void GrantLandingClearance(Flight flight)
         {
             bool landingClearence = false;
@@ -50,7 +51,7 @@ namespace DesignPatterns.Behavioral.Mediator
                 Console.WriteLine(flight.ToString() + " flight not be flights list.");
             }
         }
-
+        // parameter Flight flight
         public void GrantTakeoffClearance(Flight flight)
         {
             bool takeOffClearance = false;
@@ -86,7 +87,7 @@ namespace DesignPatterns.Behavioral.Mediator
             }
 
         }
-
+        // parameter Flight flight
         public void RemoveFlight(Flight flight)
         {
             if (flights.Contains(flight))
