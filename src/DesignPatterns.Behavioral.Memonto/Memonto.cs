@@ -15,9 +15,10 @@ namespace DesignPatterns.Behavioral.Memonto
         {
             this.elements = elements;
         }
-
+        
+	// return object[]
         public object[] GetElements() => elements;
-
+        // parameter object[] elements
         public void SetElements(object[] elements) => this.elements = elements;
 
 
