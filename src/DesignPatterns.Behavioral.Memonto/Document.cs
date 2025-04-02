@@ -15,12 +15,15 @@ namespace DesignPatterns.Behavioral.Memonto
             this.lines = new  List<string>();
             
         }
-
+        // parameter string line
         public void AddLine( string line) => lines.Add( line);
-        public void AddLine( int id, string line) => lines[id]= line;
+         // parameter string line, int id
+	public void AddLine( int id, string line) => lines[id]= line;
+	 // parameter int index
         public void RemoveLine(int index) => lines.Remove(lines[index]);
-        public Memonto CreateMemonto() => new Memonto(lines.ToArray());
-
+        // return Memonto
+	public Memonto CreateMemonto() => new Memonto(lines.ToArray());
+       // parameter Memonto
         public void SetMemonto(Memonto memonto)
         {
             lines.Clear();
@@ -32,7 +35,7 @@ namespace DesignPatterns.Behavioral.Memonto
             }
         }
 
-
+        // return string
         public override string ToString()
         {
             StringBuilder temp = new StringBuilder();
