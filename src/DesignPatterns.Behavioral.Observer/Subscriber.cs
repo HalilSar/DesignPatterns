@@ -4,6 +4,7 @@
     {
         void Update();
         void Cancel();
-        void AddSubscribe(NewsPaper news);
+        // Parameter : NewsPaper news
+	void AddSubscribe(NewsPaper news);
     }
 }
