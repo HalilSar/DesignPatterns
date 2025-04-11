@@ -13,6 +13,8 @@ namespace DesignPatterns.Behavioral.Observer
             this.surName = surName;
             this.name = name;
         }
+
+	// Parameter NewsPaper news
         public void AddSubscribe(NewsPaper news)
         {
            this.newsPaper = news;
