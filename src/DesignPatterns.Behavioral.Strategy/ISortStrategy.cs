@@ -8,6 +8,7 @@ namespace DesignPatterns.Behavioral.Strategy
 {
    public interface ISortStrategy
     {
+        // Parameter int[] array
         void Sort(int[] array);
     }
 }
