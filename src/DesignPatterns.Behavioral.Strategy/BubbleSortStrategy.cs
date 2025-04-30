@@ -8,6 +8,7 @@ namespace DesignPatterns.Behavioral.Strategy
 {
     public class BubbleSortStrategy : ISortStrategy
     {
+        // Parameter : int[] array
         public void Sort(int[] array)
         {
             Console.WriteLine("Sorting array using bubble sort");
@@ -26,7 +27,7 @@ namespace DesignPatterns.Behavioral.Strategy
             }
             PrintArray(array);
         }
-
+        // Parameter : int[] array
         private void PrintArray(int[] array)
         {
             foreach (var item in array)
