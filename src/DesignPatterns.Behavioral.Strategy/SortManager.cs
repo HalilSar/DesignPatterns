@@ -13,7 +13,7 @@ namespace DesignPatterns.Behavioral.Strategy
         {
             this.sortStrategy = sortStrategy;
         }
-
+        // parameter int[] array
         public void AddSortArray(int[] array) => this.sortStrategy.Sort(array);
     }
 }
