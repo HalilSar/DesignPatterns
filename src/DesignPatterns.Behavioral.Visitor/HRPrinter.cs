@@ -4,6 +4,7 @@ namespace DesignPatterns.Behavioral.Visitor
 {
     public class HRPrinter : Printer
     {
+        // Parameter : Visitor visitor
         public void Accept(Visitor visitor)
         {
             visitor.Visit(this);
@@ -13,7 +14,7 @@ namespace DesignPatterns.Behavioral.Visitor
         {
             Console.WriteLine(this.ToString() + " is printing...");
         }
-
+        // Return string
         public override string ToString()
         {
             return "HRPrinter ";
