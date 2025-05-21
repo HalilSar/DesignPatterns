@@ -8,7 +8,9 @@ namespace DesignPatterns.Creational.AbstractFactory
 {
     public interface AbstractFactory
     {
+        // return Bear
         Bear GetBear();
+        // return Tiger
         Tiger GetTiger();
     }
 }
