@@ -8,6 +8,7 @@ namespace DesignPatterns.Creational.AbstractFactory
 {
    public interface Bear
     {
+        // return string
         string GetBearSpecies();
     }
 }
