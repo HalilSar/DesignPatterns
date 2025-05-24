@@ -8,6 +8,7 @@ namespace DesignPatterns.Creational.AbstractFactory
 {
    public interface Tiger
     {
+        // return string
         string GetTigerSpecies();
     }
 }
