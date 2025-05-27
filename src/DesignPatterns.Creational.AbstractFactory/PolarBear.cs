@@ -8,6 +8,7 @@ namespace DesignPatterns.Creational.AbstractFactory
 {
    public class PolarBear:Bear
     {
+         // return string
         public string GetBearSpecies()
         {
             return "Polar Bear";
