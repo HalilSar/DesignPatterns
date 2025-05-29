@@ -8,6 +8,7 @@ namespace DesignPatterns.Creational.AbstractFactory
 {
    public class BengalTiger:Tiger
     {
+        // return string
         public string GetTigerSpecies()
         {
             return "Bengal Tiger";
