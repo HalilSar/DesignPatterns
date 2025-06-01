@@ -8,12 +8,13 @@ namespace DesignPatterns.Creational.AbstractFactory
 {
     public class ConcreteFactory1 : AbstractFactory
     {
+        // return Bear
         public Bear GetBear()
         {
             return   new BrownBear();
 
         }
-
+        //return Tiger
         public Tiger GetTiger()
         {
             return new BengalTiger();
