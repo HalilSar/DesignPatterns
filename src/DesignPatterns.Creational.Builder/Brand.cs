@@ -13,6 +13,7 @@ namespace DesignPatterns.Creational.Builder
         {
             BrandName = brandName;
         }
+        // return string
         public override string ToString()
         {
             return BrandName;
