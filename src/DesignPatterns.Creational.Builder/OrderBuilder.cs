@@ -20,11 +20,15 @@ namespace DesignPatterns.Creational.Builder
                 car= new Car();
             }
         }
+        // return Car
         public Car GetCar() => car;
-
+        // parameter string brand
         public abstract void SetBrand(string brand);
+        // parameter string model
         public abstract void SetModel(string model);
+        // parameter string color
         public abstract void SetColor(string color);
+        // parameter int horsepower
         public abstract void SetHorsePower(int horsePower);
 
     }
