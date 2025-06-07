@@ -13,6 +13,7 @@ namespace DesignPatterns.Creational.Builder
         {
             ModelName = modelName;
         }
+        // return string
         public override string ToString()
         {
             return ModelName;
