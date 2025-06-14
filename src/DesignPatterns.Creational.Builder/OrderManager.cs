@@ -9,7 +9,8 @@ namespace DesignPatterns.Creational.Builder
    public class OrderManager
     {
         private OrderBuilder orderBuilder;
-
+        // parameters : string brand,string model,string color,int horsePower
+        // return : Car
         public Car  CreateOrder(string brand,string model,string color,int horsePower)
         {
             if(brand=="Ford")
