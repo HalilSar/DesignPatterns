@@ -14,6 +14,7 @@ namespace DesignPatterns.Creational.Factory
         {
             CreateAuto();
         }
+        // Parameter: Car car
         public void SetCarList(Car car) => this.cars.Add(car);
 
 
