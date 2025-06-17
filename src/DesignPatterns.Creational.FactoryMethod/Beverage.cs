@@ -8,6 +8,7 @@ namespace DesignPatterns.Creational.FactoryMethod
 {
     public interface Beverage
     {
+        // Return string
         string GetBeverageType();
     }
 }
