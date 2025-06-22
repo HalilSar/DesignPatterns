@@ -8,6 +8,7 @@ namespace DesignPatterns.Creational.FactoryMethod
 {
     public class Tea : Beverage
     {
+        // Return string
        public string GetBeverageType()
        {
             return "Tea";
