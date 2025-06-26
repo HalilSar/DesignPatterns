@@ -22,7 +22,7 @@ namespace DesignPatterns.Creational.ObjectPool
                 pool.Add(new Connection());
             }
         }
-
+        // Return Connection
         public  static Connection GetConnection()
         {
             if(instance.pool.Count==0)
@@ -37,7 +37,7 @@ namespace DesignPatterns.Creational.ObjectPool
             Console.WriteLine(con);
             return con;
         }
-
+        // Parameterf Connection con
          public static void Release(Connection con)
         {
             if (con != null)
