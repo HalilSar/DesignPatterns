@@ -8,6 +8,8 @@ namespace DesignPatterns.Creational.FactoryMethod
 {
     public class BeverageFactory
     {
+       // Return Beverage
+       // Parameter string beverage
        public Beverage CreateBeverage(string beverage)
        {
             if (beverage.ToLower() == "tea") return new Tea();
