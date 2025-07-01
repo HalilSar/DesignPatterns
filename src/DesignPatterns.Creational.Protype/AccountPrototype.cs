@@ -28,6 +28,7 @@ namespace DesignPatterns.Creational.Prototype
                 Console.WriteLine("Insufficient Balance!");
             }
         }
+        // Return object
         public object Clone()
         {
             return base.MemberwiseClone();

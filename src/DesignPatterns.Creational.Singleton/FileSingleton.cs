@@ -11,7 +11,7 @@ namespace DesignPatterns.Creational.Singleton
     {
         private static FileSingleton uniqueFileSingleton;
         private FileSingleton() { }
-
+        
         public static FileSingleton CreateInstance()
         {
             if (uniqueFileSingleton == null)
