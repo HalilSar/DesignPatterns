@@ -9,12 +9,13 @@ namespace DesignPatterns.Creational.Prototype
     public abstract class AccountPrototype : ICloneable
     {
         public decimal Balance { get; set; }
-
+        // Parameter decimal amount
         public void DepositMoney(decimal amount)
         {
             Balance += amount;
             Console.WriteLine($"Balance: {Balance}");
         }
+        // Parameter decimal amount
         public void WithDrawMoney(decimal amount)
         {
             if (Balance >= amount)
