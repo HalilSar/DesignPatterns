@@ -11,19 +11,20 @@ namespace DesignPatterns.Creational.Singleton
     {
         private static FileSingleton uniqueFileSingleton;
         private FileSingleton() { }
-        
+        // return FileSingleton
         public static FileSingleton CreateInstance()
         {
             if (uniqueFileSingleton == null)
                 uniqueFileSingleton = new FileSingleton();
             return uniqueFileSingleton;
         }
-
+        // Parameter string path
         public void FileCreate(string path)
         {
             FileStream fs = File.Create(path);
             fs.Close();
         }
+        // Parameter string path
         public void FileDelete(string path)
         {
             File.Delete(path);
