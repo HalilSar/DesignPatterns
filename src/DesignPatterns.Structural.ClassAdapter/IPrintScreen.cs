@@ -8,6 +8,7 @@ namespace DesignPatterns.Structural.ClassAdapter
 {
     public  interface IPrintScreen
     {
+        // parameter : string val
         public void Print(string val);
     }
 }
