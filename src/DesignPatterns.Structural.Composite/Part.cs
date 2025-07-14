@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace DesignPatterns.Structural.Composite
 {
     public interface Part
-    {
+    {   
+        // return int
         int GetPrice();
     }
 }
