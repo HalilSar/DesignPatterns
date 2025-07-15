@@ -8,6 +8,7 @@ namespace DesignPatterns.Structural.Composite
 {
     public class RAM : Part
     {
+        // return int
         public int GetPrice()
         {
             return 250;
