@@ -8,6 +8,7 @@ namespace DesignPatterns.Structural.Composite
 {
     public class Mouse : Part
     {
+        // return int
         public int GetPrice()
         {
             return 25;
