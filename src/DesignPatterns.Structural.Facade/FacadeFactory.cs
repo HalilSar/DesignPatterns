@@ -13,7 +13,7 @@ namespace DesignPatterns.Structural.Facade
         {
 
         }
-]
+
         // return : FacadeFactory
         public static FacadeFactory GetInstance() => instance;
 
