@@ -25,9 +25,11 @@ namespace DesignPatterns.Structural.Flyweight
                 document[i] = new Character[50];
             }
         }
-
+        // return : CharacterManager
         public static CharacterManager GetInstance() => manager;
-
+        \
+        // parameter : string character
+        // return    : Character
         public static Character GetCharacter(string character)
         {
 
@@ -50,6 +52,7 @@ namespace DesignPatterns.Structural.Flyweight
             return characterVal;
         }
 
+        // Parameters: string line, int lineNo
         public void AddLine(string line,int lineNo)
         {
             for (int i = 0; i < line.Length; i++)
@@ -83,8 +86,10 @@ namespace DesignPatterns.Structural.Flyweight
             Console.WriteLine("Character Count : " + manager.characters.Count);
         }
 
+        // return    : List<Character>
         public List<Character> GetCharacters() => characters;
-
+        
+        // Parameter : List<Character> characters
         public void SetCharacters(List<Character> characters) => this.characters = characters;
 
         
