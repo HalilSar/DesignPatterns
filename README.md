@@ -34,7 +34,7 @@ This project provides implementations of various common design patterns in C#. E
 ## Installation (Kurulum)
 1. Clone the repository:
    sh
-   git clone https://github.com/username/design-patterns-csharp.git
+   git clone https://github.com/HalilSar/DesignPatterns.git
    
 2. Open the project in Visual Studio or your preferred C# IDE.
 
