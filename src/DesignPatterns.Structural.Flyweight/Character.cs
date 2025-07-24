@@ -21,6 +21,7 @@ namespace DesignPatterns.Structural.Flyweight
             } set { value = characterValue; } 
         }
 
+        // return : string
         public override string ToString() => this.CharacterValue;
 
     } 
