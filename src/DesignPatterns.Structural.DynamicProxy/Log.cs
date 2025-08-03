@@ -22,6 +22,7 @@ namespace DesignPatterns.Structural.DynamicProxy
         }
         public Log(T subject) => this.subject = subject;
 
+        // Return I>class
         public static I As<I>() where I:class
         {
             if (!typeof(I).IsInterface)
@@ -30,6 +31,9 @@ namespace DesignPatterns.Structural.DynamicProxy
             }
             return new Log<T>(new T()).ActLike<I>();
         }
+
+        // Return     : bool
+        // Parameters : InvokeMemberBinder binder, object[] args, out object result
         public override bool TryInvokeMember(InvokeMemberBinder binder, object[] args, out object result)
         {
             try
@@ -48,6 +52,7 @@ namespace DesignPatterns.Structural.DynamicProxy
             }
         }
 
+        // Return: string
         public override string ToString()
         {
             return $"{Info}\n{subject}";
