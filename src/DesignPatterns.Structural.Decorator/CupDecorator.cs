@@ -14,6 +14,8 @@ namespace DesignPatterns.Structural.Decorator
         
         // Return KitchenStuff
         public KitchenStuff GetCup() => cup;
+
+        // Parameter Cup cup
         public void SetCup(Cup cup) => this.cup = cup;
     }
 }
