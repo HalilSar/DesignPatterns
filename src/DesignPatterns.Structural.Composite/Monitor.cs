@@ -8,6 +8,7 @@ namespace DesignPatterns.Structural.Composite
 {
     public class Monitor : Part
     {
+        // Return : int
         public int GetPrice()
         {
             return 100;
