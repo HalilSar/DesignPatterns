@@ -11,7 +11,8 @@ namespace DesignPatterns.Structural.Decorator
         private KitchenStuff  cup= new Cup();
 
         public abstract void Produce();
-
+        
+        // Return KitchenStuff
         public KitchenStuff GetCup() => cup;
         public void SetCup(Cup cup) => this.cup = cup;
     }
