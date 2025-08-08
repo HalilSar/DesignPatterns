@@ -8,6 +8,7 @@ namespace DesignPatterns.Structural.Composite
 {
     public class Keyboard : Part
     {
+        // Return int 
         public int GetPrice()
         {
             return 75;
