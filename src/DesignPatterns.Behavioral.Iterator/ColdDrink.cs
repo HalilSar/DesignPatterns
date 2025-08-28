@@ -14,6 +14,8 @@ namespace DesignPatterns.Behavioral.Iterator
            beverages[3] = new Beverage { Name = "Lemonade" };
            beverages[3] = new Beverage { Name = "Iced Coffee" };
         }
+
+        // return Iterator
         public Iterator GetIterator()
         {
             return   new ArrayIterator(beverages);
