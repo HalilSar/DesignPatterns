@@ -16,6 +16,7 @@ namespace DesignPatterns.Behavioral.Iterator
             beverages.Add(new Beverage { Name = "Matcha latte" });
             beverages.Add(new Beverage { Name = "Spiced cai" });
         }
+        // return Iterator
         public Iterator GetIterator()
         {
             return  new ListIterator(beverages);
