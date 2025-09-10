@@ -23,6 +23,8 @@
         void SetAccountStatus(decimal money);
  
         void Cancel();
+
+        // return : bool
         bool CancelStatus();
     }
 }
