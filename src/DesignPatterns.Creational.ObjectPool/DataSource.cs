@@ -37,7 +37,7 @@ namespace DesignPatterns.Creational.ObjectPool
             Console.WriteLine(con);
             return con;
         }
-        // Parameterf Connection con
+        // Parameter Connection con
          public static void Release(Connection con)
         {
             if (con != null)
