@@ -14,12 +14,15 @@ namespace DesignPatterns.Structural.ProtectionProxy
             SetSurName(name);
             SetAccountStatus(money);
         }
+
+        // return bool
         public bool Cancel()
         {
             this.cancelled = true;
             return cancelled;
         }
 
+        // Parameter: decimal amount
         public void DepositMoney(decimal amount)
         {
             accountStatus += amount;
@@ -41,21 +44,25 @@ namespace DesignPatterns.Structural.ProtectionProxy
             
         }
 
+        // Parameter : decimal accountStatus
         public void SetAccountStatus(decimal accountStatus)
         {
             this.accountStatus=accountStatus;
         }
 
+        // Parameter : string name
         public void SetName(string name)
         {
            this.name = name;
         }
 
+        // Parameter : string surName
         public void SetSurName(string surName)
         {
             this.surName = surName;
         }
 
+        // Parameter : decimal amount
         public void WithDrawMoney(decimal amount)
         {
             if (accountStatus-amount > 0)
