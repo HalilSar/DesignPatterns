@@ -40,22 +40,26 @@ namespace DesignPatterns.Structural.ProtectionProxy
 
         }
 
+        // Parameter : decimal accountStatus
         public void SetAccountStatus(decimal accountStatus)
         {
             throw new Exception("You do not permission.");
         }
 
+        // Parameter : string name
         public void SetName(string name)
         {
             throw new Exception("You do not permission.");
         }
 
+        // Parameter : string surName
         public void SetSurName(string surName)
         {
             throw new Exception("You do not permission."); 
 
         }
 
+        // Parameter : decimal amount
         public void WithDrawMoney(decimal amount)
         {
            this.accountBank.WithDrawMoney(amount);
