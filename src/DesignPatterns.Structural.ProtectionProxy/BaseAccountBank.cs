@@ -21,6 +21,8 @@ namespace DesignPatterns.Structural.ProtectionProxy
 
         // Parameter: decimal accountStatus
         public void SetAccountStatus(decimal accountStatus);
+
+        // Return bool
         public bool Cancel();
         
     }
