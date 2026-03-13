@@ -10,12 +10,13 @@ namespace DesignPatterns.Structural.ProtectionProxy
             this.accountBank = accountBank;
         }
 
-        
+        // Return : bool
         public bool Cancel()
         {
             throw new Exception("You do not permission.");
         }
 
+        // Parameter : decimal amount 
         public void DepositMoney(decimal amount)
         {
             this.accountBank.DepositMoney(amount);
@@ -37,22 +38,26 @@ namespace DesignPatterns.Structural.ProtectionProxy
 
         }
 
+        // Parameter : decimal accountStatus
         public void SetAccountStatus(decimal accountStatus)
         {
             throw new Exception("You do not permission.");
         }
 
+        // Parameter : string name
         public void SetName(string name)
         {
             throw new Exception("You do not permission.");
         }
 
+        // Parameter : string surName
         public void SetSurName(string surName)
         {
             throw new Exception("You do not permission."); 
 
         }
 
+        // Parameter : decimal amount
         public void WithDrawMoney(decimal amount)
         {
            this.accountBank.WithDrawMoney(amount);
